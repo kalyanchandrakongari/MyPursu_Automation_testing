@@ -19,7 +19,7 @@ try:
     # Step 2: Enter email
     email_input = wait.until(EC.visibility_of_element_located((By.ID, "emailID")))
     # email_input = wait.until(EC.visibility_of_element_located((By.ID, "email")))
-    email_input.send_keys("raksha@yopmail.com")
+    email_input.send_keys("nane@yopmail.com")
 
     # Wait for the checkbox to be present
     terms_checkbox = wait.until(EC.presence_of_element_located((By.ID, "termsConditions")))
@@ -45,7 +45,7 @@ try:
     # Step 3: Open Yopmail to get OTP
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[1])
-    driver.get("https://yopmail.com/?login=raksha")
+    driver.get("https://yopmail.com/?login=nane")
 
 
     # Step 4: Read OTP from email
