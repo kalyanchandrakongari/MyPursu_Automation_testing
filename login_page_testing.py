@@ -18,7 +18,7 @@ try:
 
     # Step 2: Enter email
     email_input = wait.until(EC.visibility_of_element_located((By.ID, "emailID")))
-    email_input.send_keys("nane@yopmail.com")
+    email_input.send_keys("kalyan@yopmail.com")
 
     # Step 3: Accept Terms and Conditions
     terms_checkbox = wait.until(EC.presence_of_element_located((By.ID, "termsConditions")))
@@ -36,7 +36,7 @@ try:
     # Step 5: Open YOPMAIL in new tab
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[1])
-    driver.get("https://yopmail.com/?login=nane")
+    driver.get("https://yopmail.com/?login=kalyan")
     time.sleep(2)
 
     # Step 6: Read OTP from email
